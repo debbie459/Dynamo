@@ -4,6 +4,8 @@ main{
     flex-direction: column;
     margin-top: 10%;
     font-family: 'Jost', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-section{
@@ -42,8 +44,7 @@ main{
     border-top-right-radius:15px ;
     border: none;
     height: 500px;
-    margin-bottom: 20%;
-    background-color: #E7816B;
+    margin-bottom: 30%;
 }
 
 
@@ -61,13 +62,123 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 10%;
     padding-left: 15px;
     padding-right: 15px;
     gap: 10px;
+    color: black;
+    font-size: 1.5rem;
+    background-color: #fef4f1;
+    margin-top: -2%;
 }
 
 .item-container > div > h4{
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 2.5rem;
+    color: #cc5801;
+}
+
+@media screen and (min-width:500px){
+    .first-section{
+        width: 95%;
+        border-radius: 20px;
+    }
+
+   
+
+    .item-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        max-height: 300px;
+        
+       
+    }
+
+    .item-container > img{
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .item-container > div{
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: -1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-container > div > h5{
+        font-size: 2rem;
+    }
+
+    .item-container > div > p{
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
+        justify-items: center; 
+        width: 95%;
+    }
+
+    .item-container {
+        width: 100%;
+        margin-bottom: 3%;
+        max-height: 300px;
+        display: flex; /* Ensures the flex layout still applies for content inside */
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+
+    .item-container:hover{
+        background-color: #E7816B;
+    }
+
+    .item-container > img {
+        width: 100%; /* Adjust image width inside the item */
+        height: 100%;
+        border-top-right-radius: 0;
+    }
+
+    .item-container > div {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-container > div > h4 {
+        font-size: 2rem;
+    }
+
+    .item-container > div > p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Adjust the gap between items */
+        justify-items: center; /* Ensures items are centered in their grid cells */
+        width: 95%;
+        margin-bottom: 5%;
+    }
 }

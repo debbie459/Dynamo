@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { WebDesignComponent } from "../web-design/web-design.component";
+import { GraphicDesignComponent } from "../graphic-design/graphic-design.component";
 
 @Component({
   selector: 'app-app-design',
   standalone: true,
-  imports: [],
+  imports: [WebDesignComponent, GraphicDesignComponent],
   templateUrl: './app-design.component.html',
   styleUrl: './app-design.component.css'
 })
