@@ -69,6 +69,7 @@ button{
     width: 95%;
     color: black;
     position: relative;
+    
 }
 
 .second-sect > div{
@@ -97,6 +98,7 @@ button{
     bottom: 50%;
     left: 40%;
     color: white;
+    font-size: 2rem;
 
 
 }
@@ -342,18 +344,18 @@ button{
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 24px;
+        font-size: 36px;
         text-align: center;
         z-index: 2;
       }
       
       .second-sect-desktop p {
         position: absolute;
-        top: 55%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 16px;
+        font-size: 24px;
         text-align: center;
         cursor: pointer;
         z-index: 2;
