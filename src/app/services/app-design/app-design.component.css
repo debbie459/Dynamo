@@ -114,6 +114,7 @@ main{
 
     .item-container > div > h5{
         font-size: 2rem;
+        margin-top: 20%;
     }
 
     .item-container > div > p{
