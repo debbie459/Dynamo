@@ -2,7 +2,7 @@ main{
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: 'Jost', sans-serif;
     justify-content: center;
     align-items: center;
@@ -180,5 +180,6 @@ main{
         justify-items: center; /* Ensures items are centered in their grid cells */
         width: 95%;
         margin-bottom: 5%;
+        
     }
 }
