@@ -24,6 +24,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              
+              {
+                "glob": "favicon.ico",
+                "input": "src/assets",
+                "output": "/"
               }
             ],
             "styles": [
@@ -87,6 +93,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/assets",
+                "output": "/"
               }
             ],
             "styles": [
