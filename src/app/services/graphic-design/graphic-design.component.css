@@ -2,7 +2,7 @@ main{
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: 'Jost', sans-serif;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ main{
     text-align: center;
     gap: 20px;
     color: white;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .first-section > h1{
