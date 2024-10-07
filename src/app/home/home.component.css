@@ -96,9 +96,9 @@ button{
     position: absolute;
     z-index: 1;
     bottom: 50%;
-    left: 40%;
+    left: 30%;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
 
 }
@@ -107,7 +107,7 @@ button{
     position: absolute;
     z-index: 1;
     bottom: 40%;
-    left: 40%;
+    left: 30%;
     color: white;
 }
 
