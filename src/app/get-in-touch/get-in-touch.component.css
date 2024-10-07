@@ -1,0 +1,93 @@
+.normal-view{
+    background-color: #E7816B;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+h4{
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 10%;
+}
+
+button{
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.desktop-view{
+    display: none;
+}
+
+
+@media screen and (min-width:800px){
+
+    .normal-view{
+        display: none;
+    }
+
+    .desktop-view{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: -25px;
+    }
+
+    .desktop-view > .container{
+        display: flex;
+        width: 95%; 
+        background-color: #E7816B; 
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+        color: white;
+        position: relative;
+        /* justify-content: space-evenly; */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .desktop-view h4{
+        font-size: 45px;
+    }
+
+    .container > div{
+        width: 40%;
+        font-family: 'Jost';
+    }
+
+    .container > div > p{
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .container > button {
+        width: 15%;
+        height: 50px;
+        font-size: 15px;
+        font-family: 'Jost';
+    }
+    
+    
+}

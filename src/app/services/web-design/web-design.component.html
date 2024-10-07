@@ -1,0 +1,18 @@
+<main>
+    <div class="first-section">
+        <h1>Web Design</h1>
+        <p>We build websites that serve as powerful marketing tools and bring memorable experineces</p>
+    </div>
+
+    <div class="second-section">
+        @for(item of webDesignArray; track item){
+            <div class="item-container">
+                <img [src]="item.imageUrl">
+                <div>
+                    <h4>{{item.projectName}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        }
+    </div>
+</main>

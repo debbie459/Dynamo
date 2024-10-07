@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    padding: 15px;
+    
+}
+
+#logo{
+    width: 40%;
+}
+
+
+
+.options{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    
+
+}
+
+.options p{
+    margin-bottom: 15px;
+}
+
+.options-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 580px) {
+    header{
+        padding: 25px;
+        font-family: 'Jost', sans-serif;
+    }
+
+
+    .options-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 15px;
+        color: rgb(56, 56, 56);
+        font-weight: 400;
+        
+    }
+
+    .options-desktop p:hover{
+        text-decoration: underline;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    #logo{
+        width: 32%;
+    }
+
+    
+}
+
+
+@media  screen and (min-width: 1024px) {
+    header{
+        padding: 40px;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .options-desktop{
+        font-size: 20px;
+    }
+
+    #logo{
+        width: 20%;
+    }
+}

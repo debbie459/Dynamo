@@ -1,0 +1,95 @@
+<div>
+    <app-header></app-header>
+    
+    <main>
+
+        <div class="first-sect">
+            <img src="assets/bg-pattern-hero-home.svg" id="bg-pattern">
+
+            <h1 id="big-txt">Award winning custom designs and digital brandng solutions</h1>
+    
+            <p id="small-txt">With over 10 years in the industry, we are experienced in creating fully responsive websites, app deisgn and engaging brand experineces, Find out more about our services. </p>
+    
+            <button [routerLink]="['company']">LEARN MORE</button>
+    
+            <img src="assets/image-hero-phone.webp">
+        </div>
+
+        <div class="first-sect-desktop">
+            
+            <div class="sect-1">
+                <h1 id="big-txt">Award winning custom designs and digital brandng solutions</h1>
+    
+                <p id="small-txt">With over 10 years in the industry, we are experienced in creating fully responsive websites, app deisgn and engaging brand experineces, Find out more about our services. </p>
+        
+                <button [routerLink]="['company']">LEARN MORE</button>
+            </div>
+            
+
+            <div class="sect-2">
+                <img src="assets/bg-pattern-hero-home.svg" id="bg-pattern-d">
+
+                <img src="assets/image-hero-phone.webp" id="phone-img">
+
+            </div>
+    
+            
+        </div>
+
+        <div class="second-sect">
+            @for(object of serviceArray; track object){
+                <div>
+                    <img [src]="object.imgUrl" alt="img">
+                    
+                    <h3>{{object.title}}</h3>
+                    <p (click)="viewProjects(object.title)">View Projects ></p>
+                </div>
+            }
+        </div>
+
+        <div class="second-sect-tab">
+            @for(object of serviceArrayTab; track object){
+                <div>
+                    <img [src]="object.imgUrl" alt="img">
+                    
+                    <h3>{{object.title}}</h3>
+                    <p (click)="viewProjects(object.title)">View Projects ></p>
+                </div>
+            }
+        </div>
+
+
+
+        <div class="second-sect-desktop">
+            @for(object of serviceArray; track object){
+                <div>
+                    <img [src]="object.imgUrl" alt="img">
+                    
+                    <h3>{{object.title}}</h3>
+                    <p (click)="viewProjects(object.title)">View Projects ></p>
+                </div>
+            }
+        </div>
+
+
+        <div class="our-values">
+            
+            @for(value of valuesArray;track value;){
+                <div class="value-item">
+                    <img [src]="value.imgUrl">
+                    <h5>{{value.title}}</h5>
+                    <p>{{value.text}}</p>
+                </div>
+            }
+           
+        </div>
+        
+    </main>
+
+    <app-get-in-touch class="app-get"></app-get-in-touch>
+
+    <app-footer></app-footer>
+    
+    
+
+</div>

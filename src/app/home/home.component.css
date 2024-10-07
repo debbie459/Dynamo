@@ -1,0 +1,381 @@
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: "Jost", sans-serif;
+    justify-content: center;
+    
+}
+
+.first-sect{
+    background-color: #E7816B;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.first-sect-desktop{
+    display: none;
+}
+
+#bg-pattern{
+    position: absolute;
+    top: 0px; /* Adjust to move it upwards */
+    right: -100px; /* Adjust to move it to the right */
+    height: 400px; /* Control the size of the pattern */
+     /* Ensure it's behind the content */
+    
+}
+
+
+
+#big-txt{
+    
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: bolder;
+    word-wrap: break-word;
+    margin-top: 15%;
+    
+    
+}
+
+#small-txt{
+    margin-top: 10%;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
+button{
+    width: 40%;
+    margin-top: 10%;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 15%;
+
+}
+
+.second-sect{
+    margin-top: 30%;
+    width: 95%;
+    color: black;
+    position: relative;
+}
+
+.second-sect > div{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+.second-sect > div > img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+    border-radius: 10px;
+}
+
+
+
+.second-sect > div > h3{
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 40%;
+    color: white;
+
+
+}
+
+.second-sect > div > p{
+    position: absolute;
+    z-index: 1;
+    bottom: 40%;
+    left: 40%;
+    color: white;
+}
+
+
+.our-values{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.our-values > h4{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.our-values > div{
+    margin-bottom: 20%;
+}
+
+.our-values > div > h5,p{
+    color: black;
+}
+
+.our-values > div > h5{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.second-sect-tab{
+    display: none;
+}
+
+.second-sect-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 515px) {
+ 
+    .first-sect {
+        width: 90%;
+        border-radius: 20px;
+        margin-top: 5%;
+        padding: 70px;
+        height: 800px;
+    }
+
+    #big-txt{
+        margin-top: 5%;
+        font-size: 40px;
+        line-height: 45px
+    }
+
+    #small-txt{
+        margin-top: 5%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    button{
+        margin-top: 5%;
+        width: 55%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .second-sect{
+        display: none
+    }
+
+    .second-sect-tab{
+        display: flex;
+        width: 90%;
+        margin-top: 15%;
+        flex-direction: column;
+    }
+
+    .second-sect-tab > div{
+        margin-top: 5%;
+        position: relative;
+        border-radius: 20px;
+        height: 40%;
+
+    }
+
+    .second-sect-tab > div > img{
+        object-fit: fill;
+        background-size: cover;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .second-sect-tab > div > h3{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        font-size: 40px;
+    }
+
+    .second-sect-tab > div > p {
+        position: absolute;
+        top: 65%;
+        left: 40%;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (min-width:860px) {
+
+    .first-sect{
+        height: 900px;
+    }
+    button{
+        width: 80%; 
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .first-sect{
+        display: none;
+    }
+
+    .first-sect-desktop{
+        background-color:  #E7816B;
+        width: 90%;
+        margin-top: 2%;
+        border-radius: 15px;
+        display: flex;
+    }
+
+    .sect-1{
+        width: 50%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .sect-1 > #big-txt{
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .sect-1 > #small-txt{
+        text-align: left;
+        font-size: 18px;
+        
+    }
+
+    .sect-1 > button{
+        width: 30%;
+        margin-left: -70%;
+        margin-top: 10%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+    .sect-2{
+        display: flex;
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sect-2 > #bg-pattern{
+        height: 50%;
+        position: relative;
+    }
+
+    .sect-2 > #phone-img{
+        position: absolute;
+        right: 20%;
+        top: 40px;
+    }
+
+    .second-sect-tab{
+        display: none;
+    }
+
+    .second-sect-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns: one for left image, one for two stacked images */
+        grid-template-rows: auto auto; /* Two rows for the second column */
+        gap: 20px; /* Space between the grid items */
+        width: 90%;
+        max-width: 1200px; /* Limit width for better layout */
+        margin: 0 auto; /* Center grid on the page */
+        margin-top: 10%;
+      }
+      
+      .second-sect-desktop div:nth-child(1) {
+        grid-column: 1 / 2; /* First item takes the entire left side */
+        grid-row: 1 / 3;    /* Spans both rows */
+        height: 100%; /* Make the height responsive */
+      }
+      
+      .second-sect-desktop div:nth-child(2) {
+        grid-column: 2 / 3; /* Second item in the top right */
+        grid-row: 1 / 2;    /* Top row */
+        height: 100%; /* Make the height responsive */
+      }
+      
+      .second-sect-desktop div:nth-child(3) {
+        grid-column: 2 / 3; /* Third item in the bottom right */
+        grid-row: 2 / 3;    /* Bottom row */
+        height: 100%; /* Make the height responsive */
+      }
+      
+      .second-sect-desktop div {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .second-sect-desktop div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure images fill their containers */
+        transition: filter 0.3s ease; /* Hover effect */
+      }
+      
+      .second-sect-desktop div:hover img {
+        filter: brightness(50%);
+      }
+      
+      .second-sect-desktop h3 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        z-index: 2;
+      }
+      
+      .second-sect-desktop p {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2;
+      }
+      
+      .second-sect-desktop p:hover {
+        text-decoration: underline;
+      }
+
+     .our-values {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 10%;
+     }
+
+     
+
+
+    
+   
+
+
+}

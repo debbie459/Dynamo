@@ -1,0 +1,18 @@
+<main>
+    <div class="first-section">
+        <h1>Graphic Design</h1>
+        <p>We deliver eye-catching branding materials that are tailored to meet your business objectives</p>
+    </div>
+
+    <div class="second-section">
+        @for(item of graphicDesignArray; track item){
+            <div class="item-container">
+                <img [src]="item.imageUrl">
+                <div>
+                    <h4>{{item.projectName}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        }
+    </div>
+</main>

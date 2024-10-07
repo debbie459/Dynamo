@@ -1,0 +1,78 @@
+<div>
+        
+    <app-header></app-header>
+    <main>
+        <div class="section-one">
+            <img src="assets/bg-pattern-hero-home.svg" alt="background">
+            <div class="inner-section">
+                <h4>Contact Us</h4>
+                <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+
+                <form [formGroup]="reactiveForm" (ngSubmit)="onFormSubmit()">
+                    <div class="box">
+                        <label>Name</label>
+                        <input formControlName="name" name="name" type="text">
+
+                        <div *ngIf="name?.invalid && name?.touched">
+                            <small *ngIf="name?.errors?.['required']">Name is required</small>
+                          </div>
+                    </div>
+
+                    <div class="box">
+                        <label>Email Address </label>
+                        <input formControlName="email" name="email" type="email">
+
+                        <div *ngIf="email?.invalid && email?.touched">
+                            <small *ngIf="email?.errors?.['required']">Email is required</small>
+                            <small *ngIf="email?.errors?.['email']">Please enter a valid email</small>
+                          </div>
+                    </div>
+
+                    <div class="box">
+                        <label>Phone</label>
+                        <input formControlName="phone" name="phone" type="text">
+
+                        <div *ngIf="phone?.invalid && phone?.touched">
+                            <small *ngIf="phone?.errors?.['required']">Phone number is required</small>
+                            <small *ngIf="phone?.errors?.['pattern']">Phone must contain only numbers</small>
+                          </div>
+                    </div>
+
+                    <div class="box">
+                        <label>Your Message</label>
+                        <textarea rows="4" cols="50" formControlName="message" name="message" ></textarea>
+
+                        <div *ngIf="message?.invalid && message?.touched">
+                            <small *ngIf="message?.errors?.['required']">Message is required</small>
+                          </div>
+                        
+                    </div>
+
+
+                    <button type="submit" [disabled]="reactiveForm.invalid">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="section-two">
+            <div class="locations">
+                @for(location of locationArray; track location){
+                    <div class="location-item">
+                        <div class="image-container">
+                            <img src="assets/bg-pattern-small--location.svg" alt="location-background" id="background">
+                            <img  [src]="location.imgUrl" alt="location-img" id="image">
+                        </div>
+        
+                        <h3>{{location.name}}</h3>
+        
+                        <button [routerLink]="['/locations']">See Location</button>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </main>
+
+<app-footer></app-footer>
+</div>  

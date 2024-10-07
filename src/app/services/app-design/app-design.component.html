@@ -1,0 +1,18 @@
+<main>
+    <div class="first-section">
+        <h1>App Design</h1>
+        <p>Our mobile designs bring intuitive digital solutions to your customers right at their fingertip.</p>
+    </div>
+
+    <div class="second-section">
+        @for(item of appDesignArray; track item){
+            <div class="item-container">
+                <img [src]="item.imageUrl">
+                <div>
+                    <h4>{{item.projectName}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        }
+    </div>
+</main>

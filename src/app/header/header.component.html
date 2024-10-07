@@ -1,0 +1,25 @@
+<header>
+    <img src="assets/designo-logo.webp" alt="logo" id="logo">
+    
+    <img class="hamburger" src="assets/icon-hamburger.svg" (click)="toggleVisibility()">
+
+    
+
+
+    @if(isShown){
+        <div class="options">
+            <p [routerLink]="['/company']">Our Company</p>
+            <p [routerLink]="['/locations']">Locations</p>
+            <p [routerLink]="['/contact']">Contact</p>
+        </div>
+    }
+
+    <div class="options-desktop">
+        <p [routerLink]="['/company']">OUR COMPANY</p>
+        <p [routerLink]="['/locations']">LOCATIONS</p>
+        <p [routerLink]="['/contact']">CONTACT</p>
+    </div>
+
+    
+
+</header>

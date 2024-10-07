@@ -1,0 +1,371 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+}
+
+.overall-container-desktop{
+    display: none;
+}
+
+#hero-image{
+    width: 100%;
+    margin-top: 7%;
+}
+
+.about{
+    background-color: #E7816B;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+    max-height: 500px;
+    margin-top: -5%;
+    color: white;
+    
+}
+
+.about > img{
+    position: relative;
+    height: 400px;
+    right: -50%;
+    z-index: 1;
+}
+ 
+.about > h3{
+    top: 20%;
+    position: absolute;
+    left: 30%;
+    font-size: 2rem;
+    
+    font-family: 'Jost';
+
+}
+
+.about > p{
+    top: 35%;
+    position: absolute;
+    text-align: center;
+    right: 5%;
+    font-size: 1rem;
+    line-height: 25px;
+    
+    font-family: 'Jost';
+}
+
+.talents{
+    margin-top: 30%;
+    width: 100%;
+}
+
+.talents > img{
+    width: 100%;
+    
+    
+}
+
+.talents > div{
+    display: flex;
+    background-color: #fef4f1;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.talents > div > h4{
+    color: #cc5801;
+    font-size: 1.65rem;
+    
+    font-family: 'Jost';
+}
+
+.talents > div > p{
+    line-height: 25px;
+    font-size: 1rem;
+    
+    font-family: 'Jost';
+}
+
+.locations{
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-item {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.location-item > .image-container {
+    position: relative;
+}
+
+.location-item > div > #background {
+    position: absolute;
+    z-index: 1;
+}
+
+.location-item > div > image{
+    position: relative;
+    top: 50%;
+}
+
+.location-item >  h3{
+    font-size: 1rem;
+    font-family: 'Jost';
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-weight: 400;
+}
+
+button{
+    background-color: #cc5801;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    font-family: 'Jost';
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.real-deal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fef4f1;
+    padding: 20px;
+}
+
+.real-deal > img{
+    width: 100%;
+}
+
+.real-deal > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+.real-deal > div > h4{
+    color: #cc5801;
+    font-family: 'Jost';
+    font-size: 1.5rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.real-deal > div > p{
+    font-family: 'Jost';
+    line-height: 25px;
+}
+
+@media screen and (min-width:630px) {
+    .locations{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+       
+    }
+
+    .location-item{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+   
+    .overall-container{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items:center ;
+
+    }
+    
+    
+    .overall-container-desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        border-radius: 30px;
+        margin-top: 2%;
+        width: 95%;
+        
+    }
+
+    .overall-container-desktop #hero-image{
+        height: 100%;
+        margin-top: 0;
+        background-size: cover;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 50%;
+    }
+
+    .about-desktop{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        background-color: #E7816B;
+        color: white;
+        position: relative;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 50px;
+        font-family: 'Jost';
+        justify-content: center;
+        /* align-items: center; */
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        
+    }
+
+    #bg-pattern-desktop{
+        position: relative;
+        z-index: 2;
+        top: -25%;
+        height: 350px;
+        left: -20%;
+    }
+
+
+    .about-desktop h3{
+        font-size: 2.5rem;
+        position: absolute;
+        top: 30%;
+    }
+
+    .about-desktop p{
+        font-size: 1.1rem;
+        line-height: 30px;
+        position: absolute;
+        top: 45%;
+        margin-right: 5%;
+    }
+
+    .talents{
+        margin-top: 10%;
+        width: 95%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        max-height: 800px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talents > img{
+        
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .talents > div{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .talents > div > h4{
+        font-size: 2rem;
+        margin-top: 3%;
+    }
+
+    .talents > div > p{
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+
+    .locations{
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5%;
+    }
+
+    .location-item{
+        width: 40%;
+        height: 20%;
+    }
+   
+    .real-deal{
+        width: 95%;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .real-deal > img{
+        height: 500px;
+        margin-bottom: 0;
+    }
+
+    .real-deal > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-top: 0;
+        height: 40%;
+        padding-bottom: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        
+    }
+
+    .real-deal > div > h4{
+        font-size: 3rem;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    .real-deal > div > p{
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    #upper{
+        margin-top: 3%;
+    }
+    
+}

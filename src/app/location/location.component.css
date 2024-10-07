@@ -1,0 +1,104 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 30px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    background-color: #fef4f1;
+}
+
+.location iframe{
+    border: 2px solid blue;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.location > .location-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.location-inner-container > h2{
+    color:  #cc5801;
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+}
+
+strong{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+address{
+    font-size: 1rem;
+    font-family: 'Jost';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width:1024px) {
+    main{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .location{
+        width: 90%;
+        margin-bottom: 15%;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .location-inner-container{
+        justify-content: left;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .location-inner-container > h2{
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .description-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        
+        
+    }
+
+    strong{
+        font-size: 2rem;
+        margin-bottom: 1%;
+    }
+
+    .description-container > div{
+        font-size: 1.5rem;
+    }
+  
+    address{
+        font-size: 1.5rem;
+    }
+}
